@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inicio</title>
+
+<!--    iconos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+<!--    tipografias-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+<!--    boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="header">
+            <div class="buscador">
+                <form action="#">
+                    <div>
+                        <input type="search">
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </form>
+            </div>
+            <div class="logo">
+                <a href="index.html"><img src="imgs/logo.webp" alt=""></a>
+            </div>
+            <div class="login-register">
+                <ul>
+                    <li><a href="#">Crear Cuenta</a></li>
+                    <li><a href="#">Iniciar Sesión</a></li>
+                    <li class="carrito"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="navegacion">
+            <div class="hamburguesa">
+                <a href="#" id="menu-toggle" onclick='toggle_menu(); return false;'></a>
+            </div>
+            <nav class="navegacion">
+                <ul>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="como-comprar.html">Cómo Comprar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <div class="portada">
+            <div id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="imgs/portada.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgs/portada.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgs/portada.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="totulo-principal">
+            <h1>The Salchi Store</h1>
+        </div>
+        <section id="section-home">
+            <div class="para-vos">
+                <a href="productos.html">
+                    <img src="imgs/para-vos.jpg" alt="">
+                    <div>
+                        <h2>Para vos</h2>
+                        <p>Shop</p>
+                    </div>
+                </a>
+            </div>
+            <div class="para-ellos">
+                <a href="productos.html">
+                    <img src="imgs/para-vos.jpg" alt="">
+                    <div>
+                        <h2>Para Ellos</h2>
+                        <p>Shop</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section id="productos-home">
+            <div class="productos-home">
+                <a>
+                    <img src="imgs/yerbera.webp" alt="">
+                    <p>Yerbera + azucarera salchi negro</p>
+                    <p>$12.000,00</p>
+                </a>
+                <a>
+                    <img src="imgs/body-salchi-negro.webp" alt="">
+                    <p>Body Salchinegro</p>
+                    <p>$15.300,00</p>
+                </a>
+                <a>
+                    <img src="imgs/piluso.webp" alt="">
+                    <p>Piluso negro con salchi marron</p>
+                    <p>$16.000,00</p>
+                </a>
+                <a>
+                    <img src="imgs/gorra-beige.webp" alt="">
+                    <p>Gorra beige salchi marron</p>
+                    <p>$20.000,00</p>
+                </a>
+            </div>
+            <div class="boton-ver-mas">
+                <a href="productos.html">Ver todos los productos</a>
+            </div>
+
+        </section>
+        <section id="envios">
+            <div>
+                <div>
+                    <i class="fa-solid fa-truck"></i>
+                </div>
+                <div>
+                    <h2>Enviamos tu compra</h2>
+                    <p>Entregas a todo el país</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <i class="fa-regular fa-credit-card"></i>
+                </div>
+                <div>
+                    <h2>Pagá como Quieras</h2>
+                    <p>Tarjetas de credito o efectivo</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <div>
+                    <h2>Pagá como Quieras</h2>
+                    <p>Tarjetas de credito o efectivo</p> 
+                </div>
+            </div>
+        </section>
+        <section id="publicidad">
+            <iframe src="https://catascardilli.github.io/RV.github.io/anunciorv.html" scrolling="no"></iframe>
+        </section>
+    </main>
+    <footer id="footer">
+        <p>Todos los derechos reservados</p>
+    </footer> 
+
+    <script>
+        function toggle_menu() {
+            document.querySelector('body').classList.toggle('menu_abierto')
+        }
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>

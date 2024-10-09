@@ -1,0 +1,632 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header {
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+    background: #FFFFFF;
+    z-index: 5;
+    height: 100px;
+    top: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    /*width: 100%;*/
+}
+
+.header > div {
+    width: 30%;
+}
+
+.hamburguesa {
+    /*background: green;*/
+    color: white;
+    padding: 1em;
+    font-size: 1em;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1000000;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.buscador form > div {
+    display: flex;
+
+}
+
+.buscador form input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #808080;
+}
+
+.buscador form button {
+    background: none;
+    color: #808080;
+    border: none;
+    font-size: 20px;
+}
+
+
+.login-register > ul {
+    display: flex;
+    gap: 0 5px;
+    align-items: center;
+    list-style: none;
+}
+
+.login-register > ul li:first-child {
+    border-right: 1px solid gray;
+    padding-right: 5px;
+}
+
+.login-register > ul li a {
+    text-decoration: none;
+    color: gray;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 10px;
+}
+
+.carrito a i {
+    font-size: 20px;
+}
+
+.navegacion {
+    position: fixed;
+    background: #FFF;
+    top: 0;
+    bottom: 0;
+    left: -100vw;
+    width : 80%;
+    transition: 0.7s;
+    z-index: 2;
+}
+
+
+.navegacion ul {
+    list-style: none;
+    padding: 0;
+    width: 80%;
+    margin: 7em auto;
+}
+
+.navegacion ul li a {
+    display: block;
+    padding: .75em 1em;
+    border-bottom: 1px solid #808080;
+    color: #808080;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1, h2, h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 30px;
+    color: #4C4C4C;
+}
+
+p, a {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navegacion ul li a:link {
+    text-decoration: none;
+}
+
+.navegacion ul li:last-child a {
+    border: none;
+}
+
+#menu-toggle {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../imgs/abrir-menu.png) no-repeat;
+    background-size: contain;
+    margin-top: 2px;
+    margin-right: .5em;
+}
+
+.menu_abierto nav {
+    left: 0;
+}
+
+.menu_abierto #menu-toggle {
+    background-image: url(../imgs/cerrar-menu.png);
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    margin-top: 2px;
+    margin-right: .5em;
+    z-index: 9000000000;
+}
+
+#main {
+    margin-top: 100px;
+    display: block;
+}
+
+.portada {
+    width: 100%;
+}
+
+.portada img {
+    width: 100%;
+}
+
+.totulo-principal h1 {
+    visibility: hidden;
+}
+
+.para-vos img, .para-ellos  img {
+    width: 100%;
+}
+
+.para-vos > a, .para-ellos > a {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.para-vos > a > div, .para-ellos > a > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.para-ellos h2, .para-vos h2 {
+    color: #FFFFFF;
+}
+
+.para-vos > a > div p, .para-ellos a > div p {
+    color: #FFFFFF;
+    background: #6C412C;
+    padding: 10px 13px;
+    margin-top: 10px;
+}
+
+.productos-home img {
+    width: 100%;
+}
+
+.productos-home {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.productos-home > a {
+    width: 48%;
+    margin-bottom: 15px;
+    text-decoration: none;
+
+}
+
+.productos-home > a img {
+    width: 100% !important;
+}
+
+.productos-home > a p:nth-child(2) {
+    text-transform: uppercase;
+    text-align: center;
+    color: #808080;
+    margin: 10px 0;
+}
+
+.productos-home > a p:nth-child(3) {
+    font-weight: 900;
+    text-align: center;
+    color: #4C4C4C ;
+}
+
+.boton-ver-mas {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.boton-ver-mas  a {
+    background: #6C412C;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    color: #FFFFFF;
+}
+
+/* productos */
+
+.titulo-productos {
+    color: #4C4C4C;
+    text-align: center;
+    margin: 15px 0;
+}
+
+#productos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#productos > a {
+    width: 48%;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+
+#productos > a img {
+    width: 100%;
+}
+
+#productos > a p:nth-child(2) {
+    text-transform: uppercase;
+    text-align: center;
+    color: #808080;
+    margin: 10px 0;
+}
+
+.precio {
+    font-weight: 900;
+    text-align: center;
+    color: #4C4C4C ;
+}
+
+/* contacto */
+
+#contacto {
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.datos {
+    margin-bottom: 15px;
+}
+
+.datos ul li, .datos ul li a {
+    list-style: none;
+    line-height: 25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #4C4C4C;
+}
+
+.datos ul li a {
+    text-decoration: none;
+}
+
+.datos ul li a i {
+    color: #4C4C4C;
+    margin-right: 7px;
+}
+
+.form-contacto form div label {
+    display: inline-block;
+    margin: 7px 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #4C4C4C;
+    text-transform: uppercase;
+}
+
+.form-contacto form div input, textarea {
+    width: 100%;
+    padding: 5px 7px;
+}
+
+textarea {
+    height: 100px;
+}
+
+.form-contacto form input[type=submit] {
+    background: #6C412C;
+    color: #FFFFFF;
+    padding: 10px 15px;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 10px;
+    text-transform: uppercase;
+    width: 50%;
+}
+
+/* Como comprar */
+#como-comprar {
+    padding: 10px;
+}
+
+#como-comprar h1 {
+    margin-bottom: 15px;
+}
+#como-comprar ol {
+    line-height: 30px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #4C4C4C;
+    display: inline-block;
+    list-style-position: inside;
+}
+
+#envios {
+    text-align: center;
+    color: #4C4C4C;
+    margin: 70px 0;
+}
+
+#envios > div {
+    margin: 15px 0;
+    padding: 10px;
+}
+
+#detalle {
+    padding: 15px;
+}
+
+.titulo-detalle h1 {
+    visibility: hidden;
+}
+
+.img-detalle {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header-detalle h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.precio-detalle {
+    font-size: 30px;
+    font-weight: 900;
+    color: #4C4C4C;
+    margin: 20px 0;
+}
+
+.medios-de-pago {
+    color: #434343;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.cantidad form label {
+    display: inline-block;
+    width: 100%;
+    margin: 15px 0 5px 0;
+    color: #4C4C4C;
+    text-transform: uppercase;
+}
+
+.cantidad form input[type=number] {
+    width: 70px;
+    padding: 5px 7px;
+    border: #4C4C4C 1px solid;
+}
+
+.cantidad form input[type=submit] {
+    width: 100%;
+    background: #6C412C;
+    color: #FFFFFF;
+    padding: 10px 15px;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.medios-envio {
+    margin-top: 20px;
+}
+
+.medios-envio form label {
+    width: 100%;
+    display: inline-block;
+    color: #4C4C4C;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.medios-envio form div input{
+    padding: 5px 7px;
+}
+
+.medios-envio form div input[type=submit] {
+    border: 1px solid #6C412C;
+    color: #6C412C;
+    text-transform: uppercase;
+    background: #FFFFFF;
+    cursor: pointer;
+}
+
+.nuestro-local, .compra-protegida, .cambios {
+    margin: 20px 0;
+    color: #4C4C4C;
+}
+
+.titulo-detall {
+    font-weight: 700;
+}
+
+.productos-similares {
+    margin-top: 50px;
+}
+
+.productos-similares h2 {
+    margin-bottom: 10px;
+}
+
+#publicidad {
+    display: flex; 
+    justify-content: center; 
+}
+
+#publicidad iframe {
+    width: 300px; 
+    height: 600px; 
+    object-fit: cover; 
+    justify-content: center;
+}
+
+
+#footer {
+    background: #808080;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 15px 0;
+}
+
+
+@media only screen and (min-width: 768px) {
+    #header  {
+        position: static;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    .navegacion {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .navegacion ul {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        width: 100%;
+    }
+
+    .navegacion ul li a {
+        border: none;
+    }
+
+    main {
+        /*margin-top: 160px !important;*/
+    }
+
+    #section-home {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    #section-home > div {
+        width: 48%;
+    }
+
+    #envios {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #envios > div {
+        width: 32%;
+    }
+
+    #productos > a {
+        width: 32%;
+    }
+
+    #contacto {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    #contacto > div {
+        width: 48%;
+    }
+
+    #detalle {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    #detalle > div {
+        width: 48%;
+    }
+
+    #publicidad iframe {
+        width: 728px; 
+        height: 90px; 
+        object-fit: cover;
+    }
+}
+
+@media only screen and (min-width: 991px) {
+
+    .productos-home > a, #productos > a {
+        width: 24%;
+    }
+
+
+
+}
+
+@media only screen and (min-width: 1200px) {
+    .header, .navegacion {
+        width: 1200px;
+        margin: auto;
+
+    }
+
+    #header .navegacion {
+        position: static;
+    }
+
+
+    main {
+        width: 1200px;
+        margin: 0 auto 0 auto ;
+        display: inline;
+    }
+
+    .portada {
+        width: 1200px;
+        margin: auto;
+    }
+
+    .navegacion ul li a:hover {
+        color: #4C4C4C;
+    }
+
+    .boton-ver-mas a:hover, .form-contacto form input[type=submit]:hover  {
+        outline: 1px solid #6C412C;
+        color: #6C412C;
+        background: none;
+    }
+}

@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Productos</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header id="header">
+    <div class="header">
+        <div class="buscador">
+            <form action="#">
+                <div>
+                    <input type="search">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </form>
+        </div>
+        <div class="logo">
+            <a href="index.html"><img src="imgs/logo.webp" alt=""></a>
+        </div>
+        <div class="login-register">
+            <ul>
+                <li><a href="#">Crear Cuenta</a></li>
+                <li><a href="#">Iniciar Sesión</a></li>
+                <li class="carrito"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="navegacion">
+        <div class="hamburguesa">
+            <a href="#" id="menu-toggle" onclick='toggle_menu(); return false;'></a>
+        </div>
+        <nav class="navegacion">
+            <ul>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="como-comprar.html">Cómo Comprar</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main id="main">
+    <div class="titulo-productos">
+        <h1>Productos</h1>
+    </div>
+    <section id="productos">
+        <a href="detalle.html">
+            <img src="imgs/body-salchi-negro.webp" alt="">
+            <p>Mousepad salchimarron</p>
+            <p class="precio">$6.900,00</p>
+        </a>
+        <a href="detalle.html">
+            <img src="imgs/mousepad-salchinegro.webp" alt="">
+            <p>Mousepad salchinegro</p>
+            <p class="precio">$6.900,00</p>
+        </a>
+        <a href="detalle.html">
+            <img src="imgs/mousepad-salchimarrones.webp" alt="">
+            <p>Mousepad salchimarrones</p>
+            <p class="precio">$6.900,00</p>
+        </a>
+        <a href="detalle.html">
+            <img src="imgs/mousepad-salchinegro.webp" alt="">
+            <p>Mousepad salchinegro</p>
+            <p class="precio">$6.900,00</p>
+        </a>
+        <a href="detalle.html">
+            <img src="imgs/body-salchi-negro.webp" alt="">
+            <p>Mousepad salchimarron</p>
+            <p class="precio">$6.900,00</p>
+        </a>
+        <a href="detalle.html">
+            <img src="imgs/mousepad-salchinegro.webp" alt="">
+            <p>Mousepad salchinegro</p>
+            <p class="precio">$6.900,00</p>
+        </a>
+        <a href="detalle.html">
+            <img src="imgs/mousepad-salchimarrones.webp" alt="">
+            <p>Mousepad salchimarrones</p>
+            <p class="precio">$6.900,00</p>
+        </a>
+        <a href="detalle.html">
+            <img src="imgs/mousepad-salchinegro.webp" alt="">
+            <p>Mousepad salchinegro</p>
+            <p class="precio">$6.900,00</p>
+        </a>
+    </section>
+    <section id="envios">
+        <div>
+            <div>
+                <i class="fa-solid fa-truck"></i>
+            </div>
+            <div>
+                <h2>Enviamos tu compra</h2>
+                <p>Entregas a todo el país</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <i class="fa-regular fa-credit-card"></i>
+            </div>
+            <div>
+                <h2>Pagá como Quieras</h2>
+                <p>Tarjetas de credito o efectivo</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <i class="fa-solid fa-lock"></i>
+            </div>
+            <div>
+                <h2>Pagá como Quieras</h2>
+                <p>Tarjetas de credito o efectivo</p>
+            </div>
+        </div>
+    </section>
+</main>
+<footer id="footer">
+    <p>Todos los derechos reservados</p>
+</footer>
+
+<script>
+    function toggle_menu() {
+        document.querySelector('body').classList.toggle('menu_abierto')
+    }
+
+</script>
+</body>
+</html>
